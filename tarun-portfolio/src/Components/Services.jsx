@@ -83,7 +83,7 @@ const Services = () => {
       duration: 1.6,
       ease: 'expo.inOut',
       stagger: 0.06,
-      delay: 3,
+      delay: 2.2,
       scrollTrigger: {
         trigger: '#main',
         start: 'top 70%',

@@ -96,8 +96,8 @@ const MaskedSection = () => {
                 <div className='divStyle md:w-[33.33%] w-[100%] flex items-center justify-center'><p className='px-6 py-4 rounded-xl bg-[#f5f5f560] w-fit font-bold md:text-xl text-md m-6'>We craft unforgettable experiences.</p></div>
                 <div className='divStyle md:w-[33.33%] w-[100%] flex items-center justify-center'><p className='px-6 py-4 rounded-xl bg-[#f5f5f560] w-fit font-bold md:text-xl text-md m-6'>From weddings to club nights.</p></div>
                 <div className='divStyle md:w-[33.33%] w-[100%] flex items-center justify-center'><p className='px-6 py-4 rounded-xl bg-[#f5f5f560] w-fit font-bold md:text-xl text-md m-6'>Traditional or modern – we do it all.</p></div>
-                <div className='divStyle md:w-[50%] w-[100%] flex items-center justify-center md:ml-[60px]'><p className='px-6 py-4 rounded-xl bg-[#f5f5f560] w-fit font-bold md:text-xl text-md m-6'>Personalized planning, flawless execution.</p></div>
-                <div className='divStyle md:w-[50%] w-[100%] flex items-center justify-left md:ml-[-60px]'><p className='px-6 py-4 rounded-xl bg-[#f5f5f560] w-fit font-bold md:text-xl text-md m-6'>Every moment, designed with care.</p></div>
+                <div className='divStyle md:w-[50%] w-[100%] flex items-center justify-center lg:ml-[60px]'><p className='px-6 py-4 rounded-xl bg-[#f5f5f560] w-fit font-bold md:text-xl text-md m-6'>Personalized planning, flawless execution.</p></div>
+                <div className='divStyle md:w-[50%] w-[100%] flex items-center justify-center lg:ml-[-60px]'><p className='px-6 py-4 rounded-xl bg-[#f5f5f560] w-fit font-bold md:text-xl text-md m-6'>Every moment, designed with care.</p></div>
                 <div className='divStyle md:w-[100%] w-[100%] flex items-center justify-center'><p className='px-6 py-4 rounded-xl bg-[#f5f5f560] w-fit font-bold md:text-xl text-md m-6'>Your celebration, our commitment.</p></div>
             </div>
 
