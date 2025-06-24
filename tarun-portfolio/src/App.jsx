@@ -2,6 +2,7 @@ import React from 'react'
 import InitialEntry from './Components/InitialEntry'
 import MaskedSection from './Components/MaskedSection'
 import Services from './Components/Services'
+import Details from './Components/Details'
 
 const App = () => {
   return (
@@ -9,6 +10,7 @@ const App = () => {
         <InitialEntry />
         <MaskedSection />
         <Services />
+        <Details />
         <div className='h-[100vh]'/>
     </main>
   )
