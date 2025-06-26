@@ -11,6 +11,7 @@ import Footer from './Components/Footer'
 const App = () => {
   return (
     <main className=' app'>
+      
         <InitialEntry />
         <MaskedSection />
         <Services />

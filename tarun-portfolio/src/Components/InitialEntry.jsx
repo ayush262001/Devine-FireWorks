@@ -4,6 +4,7 @@ import { SplitText } from 'gsap/all';
 import React, { useRef, useEffect } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import ScrollTrigger from 'gsap/ScrollTrigger';
+import SplashCursor from './SplashCursor';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
@@ -38,6 +39,7 @@ const InitialEntry = () => {
   return (
     <>
       <div className='relative'>
+        <SplashCursor />
         <section id='content' className='w-dvw h-dvh flex flex-col items-center relative justify-center z-10'>
           <h1 id='headline' className='md:text-8xl text-2xl text-[#f5f5f5] font-bold text-center'>Divine Events & Fireworks</h1>
           <p id='para' className='md:text-xl text-mlg mt-10 text-[#f5f5f5]'>Creating Unforgettable Moments</p>
