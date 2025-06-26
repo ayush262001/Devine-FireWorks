@@ -6,32 +6,30 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import { useGSAP } from '@gsap/react'
 import { useMediaQuery } from 'react-responsive'
 
-const Details = () => {
+gsap.registerPlugin(ScrollTrigger)
 
-  // Implementing GSAP animation here
+const Details = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' })
-  useGSAP(()=>{
+
+  useGSAP(() => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: '#packagesDiv',
         start: 'top bottom',
         end: 'bottom 70%',
         scrub: true,
-        toggleActions: "play none none reverse"
+        toggleActions: "play none none reverse",
       }
-    });
+    })
 
-    // animate using timeline
-    tl.fromTo('#packages', 
+    tl.fromTo('#packages',
       { opacity: 0 },
       { opacity: 1, duration: 1, ease: 'power2.out' }
-    )
-    .fromTo('#items', 
+    ).fromTo('#items',
       { opacity: 0 },
       { opacity: 1, duration: 1, ease: 'power2.out' },
-      '-=0.5' // Start slightly before the previous animation ends
-    );
-
+      '-=0.5'
+    )
   }, [])
 
   const eventSetups = [
@@ -82,33 +80,32 @@ const Details = () => {
         "Stage Carpet Arrangement"
       ]
     }
-  ];
-  
+  ]
 
   return (
-    <div id='packagesDiv' className='relative mt-20'>
-        <h1 id='packages' className='md:text-8xl text-2xl w-full text-center text-[#f5f5f5] font-bold'>
-          Packages
-        </h1>
-        
-        <div id='items' className='flex items-center justify-center flex-wrap mt-20'>
-            {/* Every single div will be created here */}
-           {eventSetups.map((ele, index)=>(
-            <>
-             <div className='bg-[#f5f5f520] w-fit h-fit p-6 shadow-xl m-4 text-[#f5f5f5] hover:scale-110 hover:bg-[#f5f5f530] transform transition-[2000]' key={index}>
-                <h3 className='md:text-2xl text-xl font-semibold text-wrap text-center'>{ele.title}</h3>
-                <h2 className='md:text-4xl my-6 text-2xl font-semibold text-wrap text-center'>{ele.price}</h2>
-                <p className='text-lg text-center text-wrap font-thin'>
-                  <ol>
-                    {ele.items.map((item, i)=>(
-                      <li key={i} className='my-1'>{item}</li>
-                    ))}
-                  </ol>
-                </p>
-             </div>
-            </>
-           ))}
-        </div>
+    <div id='packagesDiv' className='relative mt-40 bg-white py-10'>
+      <h1
+        id='packages'
+        className='md:text-8xl text-3xl w-full text-center text-gray-900 font-bold mt-20'>
+        Packages
+      </h1>
+
+      <div id='items' className='flex items-center justify-center flex-wrap mt-20 px-4'>
+        {eventSetups.map((ele, index) => (
+          <div
+            key={index}
+            className='bg-white border border-gray-200 rounded-xl w-fit h-fit p-6 shadow-md m-4 text-gray-800 hover:scale-105 hover:shadow-xl transform transition duration-500 ease-in-out'
+          >
+            <h3 className='md:text-2xl text-xl font-semibold text-center mb-2'>{ele.title}</h3>
+            <h2 className='md:text-4xl text-2xl font-bold text-center my-4 text-indigo-600'>{ele.price}</h2>
+            <ol className='text-base text-gray-700 font-normal list-disc list-inside space-y-1'>
+              {ele.items.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ol>
+          </div>
+        ))}
+      </div>
     </div>
   )
 }

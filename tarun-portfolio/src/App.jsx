@@ -4,6 +4,9 @@ import MaskedSection from './Components/MaskedSection'
 import Services from './Components/Services'
 import Details from './Components/Details'
 import Videos from './Components/Videos'
+import Parallax from './Components/Parallax'
+import Testimonial from './Components/Testimonial'
+import Footer from './Components/Footer'
 
 const App = () => {
   return (
@@ -13,7 +16,9 @@ const App = () => {
         <Services />
         <Details />
         <Videos />
-        <div className='h-[100vh]'/>
+        <Parallax />
+        <Testimonial />
+        <Footer />
     </main>
   )
 }

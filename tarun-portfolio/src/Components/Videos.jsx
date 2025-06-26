@@ -52,7 +52,7 @@ const Videos = () => {
         ref={contentRef}
         className={`flex ${isMobile? 'flex-col' : ''} flex-wrap items-center justify-center gap-4 opacity-0`}
       >
-        <div className={`flex ${isMobile? 'flex' : 'flex-col'} gap-4 items-center justify-center`} id='right'>
+        <div className={`flex ${isMobile? 'flex-row' : 'flex-col'} gap-4 items-center justify-center`} id='right'>
           {['video1', 'video2', 'video3', 'video4'].map((vid, idx) => (
             <img
               key={vid}
