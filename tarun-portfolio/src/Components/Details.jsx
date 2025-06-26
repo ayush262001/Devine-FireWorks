@@ -40,23 +40,25 @@ const Details = () => {
         "Premium Sound System (4 Top + 2 Bass)",
         "2 Sharpee Lights for Focus Effects",
         "SFX Special Effects Setup",
-        "2 CO2 Jets & 2 Spacular Machines",
+        "4 CO2 Jets & 4 Spacular Machines",
         "20 LED Lights on Stage for Dynamic Lighting",
-        "Live Dhol Performance"
+        "Live Dhol Performance",
+        "300 sq.ft Led Wall",
+        "Sound and light with squaretrust",
+        "1 Co2 gun"
       ]
     },
     {
       title: "Haldi Ceremony Setup",
       price: "₹1,00,000",
       items: [
-        "15' x 30' Trust Structure",
+        "20' x 40' Trust Structure",
         "Carpet Flooring",
         "Theme-based Props",
         "Creative Selfie Point",
         "Stage Carpet Setup",
         "Professional Sound System (2 Top + 2 Bass)",
         "Haldi Decor Elements",
-        "Vermala Setup",
         "Decorative U-Gate",
         "Comfortable Seating (Chairs + Sofas + Couch)",
         "4 Traditional Dhol Artists"
@@ -64,7 +66,7 @@ const Details = () => {
     },
     {
       title: "Wedding Setup",
-      price: "₹1,00,000",
+      price: "₹1,20,000",
       items: [
         "12' x 60' Trust Structure with Fabric (Kapda) Covering",
         "Exclusive Props & Decor Elements",
@@ -105,6 +107,8 @@ const Details = () => {
             </ol>
           </div>
         ))}
+
+        <p className='text-sm text-center w-full'>Cost may vary as per the event requirements</p>
       </div>
     </div>
   )

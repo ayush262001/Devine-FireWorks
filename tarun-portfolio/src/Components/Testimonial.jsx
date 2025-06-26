@@ -7,19 +7,19 @@ gsap.registerPlugin(ScrollTrigger)
 
 const testimonials = [
   {
-    name: 'John Doe',
-    role: 'CEO at Example Inc.',
-    text: 'This platform transformed our business. The automation saved us countless hours!',
+    name: 'Shivani Lodha',
+    role: 'Birthday Event at Diona',
+    text: 'The event was a huge success. The team was professional and the setup was amazing. The firework display was the highlight of the event. The room was decorated beautifully and the food was delicious. The team was very helpful and the event was a lot of fun. I would definitely recommend this team for any event.',
   },
   {
-    name: 'Jane Smith',
-    role: 'Marketing Lead at AgencyCo',
-    text: 'The interface is intuitive and the results speak for themselves. Highly recommend!',
+    name: 'Mr.Manish',
+    role: 'Wedding in Jaipur',
+    text: 'The wedding was a huge success. With the great fireworks and drone shoot the recording was great. The memories and the laughter moments were captured beautifully. The team was very helpful and the event was a lot of fun. I would definitely recommend this team for any event.',
   },
   {
-    name: 'Alex Johnson',
-    role: 'Realtor at HomeFinders',
-    text: 'I’ve closed more deals thanks to the smart tools offered here.',
+    name: 'Mohit Saini',
+    role: 'Wedding in Jaipur',
+    text: 'The wedding was great the fireworks were amazing and the unique setup was so beautiful. The team was very helpful and the event was a lot of fun. I would definitely recommend this team for any event.',
   },
 ]
 
